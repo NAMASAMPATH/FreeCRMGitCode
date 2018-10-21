@@ -34,8 +34,7 @@ public class TestBase {
 	{
 		try {
 			prop=new Properties();
-			FileInputStream fis =new FileInputStream("D:\\Selenium\\FreeCRMTest\\FreeCRMTest\\src\\main\\"
-					+ "java\\com\\crm\\qa\\config\\config.properties");
+			FileInputStream fis =new FileInputStream("/var/lib/jenkins/workspace/FreeCRM/src/main/java/com/crm/qa/config/config.properties");
 			prop.load(fis);
 			
 		} catch (Exception e) {
