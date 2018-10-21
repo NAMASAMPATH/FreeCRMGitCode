@@ -52,7 +52,7 @@ public class TestBase {
 			DesiredCapabilities cap=DesiredCapabilities.chrome();
 			cap.setCapability("version", "69.0.3497.100");
 			cap.setCapability("platform", "LINUX");
-			driver=new RemoteWebDriver(new URL("http://34.217.103.118:4446/wd/hub"), cap);
+			driver=new RemoteWebDriver(new URL("http://34.217.103.118:4446"), cap);
 		}
 		else if(browser.equals("firefox"))
 		{
