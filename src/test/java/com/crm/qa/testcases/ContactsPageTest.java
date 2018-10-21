@@ -1,5 +1,7 @@
 package com.crm.qa.testcases;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,7 +28,7 @@ public class ContactsPageTest extends TestBase {
 	}
 
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp() throws InterruptedException, MalformedURLException {
 
 		initialization();
 		testUtil = new TestUtil();
